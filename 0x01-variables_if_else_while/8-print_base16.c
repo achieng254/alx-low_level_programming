@@ -12,20 +12,16 @@
 
 int main(void)
 {
-	char hex_digit = '0';
+	int i;
 
-	while (hex_digit <= 'f')
+	for (i = 48; i < 58; i++)
 	{
-	putchar(hex_digit);
-	hex_digit++;
-
-	if (hex_digit > '9' && hex_digit < 'g')
+	putchar(i);
+	}
+	for (i = 97; i < 103; i++)
 	{
-	hex_digit = 'a';
+	putchar(i);
 	}
-	}
-
 	putchar('\n');
-
 	return (0);
 }
